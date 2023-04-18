@@ -1,0 +1,20 @@
+public interface MyInterface1 {
+    void myMethod();
+}
+
+public interface MyInterface2 {
+    void myMethod();
+}
+
+public class Demo implements MyInterface1, MyInterface2 {
+
+    @Override
+    public void myMethod() {
+        System.out.println("Executing myMethod()");
+    }
+
+    public static void main(String[] args) {
+        Demo demoObject = new Demo();
+        demoObject.myMethod(); 
+    }
+}
